@@ -1,0 +1,1 @@
+# zombiz-wp-theme
