@@ -11,6 +11,24 @@
                 'menu_slug'     => 'zombiz-options'
             )
         );
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Topbar',
+            'menu_title'    => 'Topbar',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Features Area',
+            'menu_title'    => 'Features',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
+        acf_add_options_sub_page(array(
+            'page_title'    => 'Footer',
+            'menu_title'    => 'Footer',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
     }
 
 

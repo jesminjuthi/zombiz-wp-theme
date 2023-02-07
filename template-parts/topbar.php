@@ -39,7 +39,6 @@
                     <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
                         Log in
                     </a>
-
                     <!-- small modal -->
                     <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                         <div class="modal-dialog modal-sm" role="document">
@@ -65,7 +64,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- large modal -->
                     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                         <div class="modal-dialog modal-lg" role="document">

@@ -100,8 +100,12 @@
 					<div class="col-sm-7">
 						<div class="foot-copyright pull-left">
 							<p>
-								&copy; All Rights Reserve
-							 	<a href="https://www.themesine.com">ThemeSINE</a>
+								<?php 
+									$copyright = get_field('copyright', 'options');
+									if($copyright) {
+										echo $copyright;
+									}
+								?>
 							</p>
 						</div><!--/.foot-copyright-->
 					</div><!--/.col-->
