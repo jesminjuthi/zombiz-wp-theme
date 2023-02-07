@@ -4,42 +4,12 @@
 		<?php 
 			get_template_part('template-parts/slider');
 			get_template_part('template-parts/features');
+			get_template_part('template-parts/about');
 		?>
 		
 		
 
-		<!--about-us start -->
-		<section id="about" class="about-us">
-			<div class="container">
-				<div class="about-us-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-us">
-								<div class="about-us-txt">
-									<h2>about us</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
-									</p>
-									<div class="project-btn">
-										<a href="#"  class="project-view">learn more
-										</a>
-									</div><!--/.project-btn-->
-								</div><!--/.about-us-txt-->
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-						<div class="col-sm-6">
-							<div class="single-about-us">
-								<div class="about-us-img">
-									<img src="<?php echo get_template_directory_uri()?>/assets/images/about/about-part.jpg" alt="about images">
-								</div><!--/.about-us-img-->
-							</div><!--/.single-about-us-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.about-us-content-->
-			</div><!--/.container-->
 
-		</section><!--/.about-us-->
-		<!--about-us end -->
 
 		<!--service start-->
 		<section id="service"  class="service">
