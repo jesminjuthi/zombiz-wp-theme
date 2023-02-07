@@ -1,4 +1,5 @@
 <?php 
+    require_once get_theme_file_path( 'inc/zombiz-functions.php' );
     // Theme Supports
     function zombiz_theme_setup() {
         define( 'VERSION', '1.0' );
@@ -97,6 +98,8 @@
         }
 
         add_action( 'init', 'zombiz_register_post_type' );
+
+        
         
 
 

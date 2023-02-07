@@ -1,15 +1,30 @@
-<section id="home" class="header">
+<?php 
+    $topbar = get_field('show_or_hide_topbar', 'options');
+    if($topbar) { ?>
+        <section id="home" class="header">
     <div class="container">
         <div class="header-left">
             <ul class="pull-left">
                 <li>
                     <a href="#">
-                        <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
+                        <i class="fa fa-phone" aria-hidden="true"></i> 
+                        <?php 
+                            $phone_number = get_field('phone_number', 'options');
+                            if($phone_number) {
+                                echo $phone_number;
+                            }
+                        ?>
                     </a>
                 </li><!--/li-->
                 <li>
                     <a href="#">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <?php 
+                            $email_address = get_field('email_address', 'options');
+                            if($email_address) {
+                                echo $email_address;
+                            }
+                        ?>
                     </a>
                 </li><!--/li-->
             </ul><!--/ul-->
@@ -78,15 +93,29 @@
                 </li><!--/li -->
                 <li>
                     <div class="social-icon">
+                        <?php 
+                            $social_icons = get_field('add_social_icons', 'options');
+                            if($social_icons) :
+                        ?>
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <?php foreach ($social_icons as $icon) { ?>
+                            <li>
+                                <a href="<?php echo $icon['social_link']; ?>">
+                                    <i class="<?php echo $icon['social_icon'];?>"></i>
+                                </a>
+                            </li>
+                           <?php } ?>
                         </ul><!--/.ul -->
+                        <?php 
+                            endif;
+                        ?>
                     </div><!--/.social-icon -->
                 </li><!--/li -->
             </ul><!--/ul -->
         </div><!--/.header-right -->
     </div><!--/.container -->
 </section><!--/.header-->
+   <?php }
+?>
+
+
