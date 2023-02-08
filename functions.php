@@ -71,10 +71,10 @@
                 'search_items'          => 'Search Sliders',
                 'not_found'             => 'No Sliders found',
                 'not_found_in_trash'    => 'No Sliders found in Trash',
-                'featured_image'        => 'Featured Image', 'zombiz',
-                'set_featured_image'    => 'Set featured image',
-                'remove_featured_image' => 'Remove featured image',
-                'use_featured_image'    => 'Use as featured image',
+                'featured_image'        => 'Slider Image', 'zombiz',
+                'set_featured_image'    => 'Set slider image',
+                'remove_featured_image' => 'Remove slider image',
+                'use_featured_image'    => 'Use as slider image',
                 'insert_into_item'      => 'Insert into Slider',
                 'uploaded_to_this_item' => 'Uploaded to this Slider',
                 'items_list'            => 'Sliders list',
@@ -90,7 +90,8 @@
                 'thumbnail',
             ],
             'taxonomies'            => [
-                'category',
+                // 'category', -> it will show the post category
+                'slider_category'
             ],
             'rewrite'               => true
         ];
@@ -99,6 +100,85 @@
 
         add_action( 'init', 'zombiz_register_post_type' );
 
+    
+    // Slider Taxonomy
+
+    $labels = array(
+        'name' => 'Slider Categories',
+        'singular_name' => 'Slider Category',
+        'menu_name' => 'Slider Categories',
+    );
+    
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'hierarchical' => true,
+    );
+    
+    register_taxonomy('slider_category', 'slider', $args);
+
+    // Projects 
+
+    function zombiz_project_cpt() {
+        
+        $args = [
+            'label'  => 'Projects',
+            'labels' => [
+                'menu_name'             => 'Projects',
+                'add_new'               => 'Add project',
+                'add_new_item'          => 'Add new project',
+                'new_item'              => 'New project',
+                'edit_item'             => 'Edit project',
+                'view_item'             => 'View project',
+                'update_item'           => 'View project',
+                'all_items'             => 'All Projects',
+                'search_items'          => 'Search Projects',
+                'not_found'             => 'No projects found',
+                'not_found_in_trash'    => 'No projects found in Trash',
+                'featured_image'        => 'Project Image', 'zombiz',
+                'set_featured_image'    => 'Set project image',
+                'remove_featured_image' => 'Remove project image',
+                'use_featured_image'    => 'Use as project image',
+                'insert_into_item'      => 'Insert into project',
+                'uploaded_to_this_item' => 'Uploaded to this project',
+                'items_list'            => 'Projects list',
+                'items_list_navigation' => 'Projects list navigation',
+                'filter_items_list'     => 'Filter projects list',
+            ],
+            'public'                => true,
+            'hierarchical'          => true,
+            'menu_icon'             => 'dashicons-image-filter',
+            'supports'              => [
+                'title',
+                'editor',
+                'thumbnail',
+            ],
+            'taxonomies'            => [
+                'project_category',
+            ],
+            'rewrite'               => true,
+            'has_archive'           => true,
+        ];
+	        register_post_type( 'project', $args );
+        }
+
+        add_action( 'init', 'zombiz_project_cpt' );
+
+        // Project Taxonomy
+
+        $labels = array(
+            'name' => 'Project Categories',
+            'singular_name' => 'Project Category',
+            'menu_name' => 'Project Categories',
+        );
+        
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'hierarchical' => true,
+        );
+        
+        register_taxonomy('project_category', 'project', $args);
         
         
 

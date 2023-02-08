@@ -42,6 +42,12 @@
         ));
 
         acf_add_options_sub_page(array(
+            'page_title'    => 'Project',
+            'menu_title'    => 'Project',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
+        acf_add_options_sub_page(array(
             'page_title'    => 'Footer',
             'menu_title'    => 'Footer',
             'parent_slug'   => 'zombiz-options'
