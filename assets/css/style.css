@@ -1748,7 +1748,7 @@ a:active.learn-btn{
 
 .about-part{
 	position:relative;
-	background:url(../../assets/images/blog/blog-banner.jpg)no-repeat;
+	background-repeat: no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;

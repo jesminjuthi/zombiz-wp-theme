@@ -1,34 +1,7 @@
 <?php
 	get_header();
+    get_template_part('template-parts/breadcrumb');
 ?>
-
-<!--about-part start-->
-<section class="about-part project-part">
-    <div class="container">
-        <div class="about-part-details text-center">
-            <h2>project</h2>
-            <div class="about-part-content">
-                <div class="breadcrumbs">
-                    <div class="container">
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">home</a><span>//</span></li>
-                            <li><a href="project.html">project</a></li>
-                        </ol>
-                        <!--/.breadcrumb-->
-                    </div>
-                    <!--/.container-->
-                </div>
-                <!--/.breadcrumbs-->
-            </div>
-            <!--/.about-part-content-->
-        </div>
-        <!--/.about-part-details-->
-    </div>
-    <!--/.container-->
-
-</section>
-<!--/.about-part-->
-<!--about-part end-->
 
 <!--project start-->
 <section id="project" class="project">

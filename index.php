@@ -1,7 +1,5 @@
 <?php 
 	get_header();
-?>
-<?php 
 	get_template_part('template-parts/slider');
 	get_template_part('template-parts/features');
 	get_template_part('template-parts/about');
