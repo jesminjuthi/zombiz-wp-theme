@@ -36,6 +36,12 @@
         ));
 
         acf_add_options_sub_page(array(
+            'page_title'    => 'Counter',
+            'menu_title'    => 'Counter',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
+        acf_add_options_sub_page(array(
             'page_title'    => 'Footer',
             'menu_title'    => 'Footer',
             'parent_slug'   => 'zombiz-options'

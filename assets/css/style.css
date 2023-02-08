@@ -704,9 +704,9 @@ a:focus.service-btn{
 --------------------------------------*/
 .statistics{
 	position:relative;
-	background:url(../../assets/images/counter/counter-banner.jpg)no-repeat;
 	background-position:center;
 	background-size:cover;
+	background-repeat: no-repeat;
 	padding: 98px 0 81px;
 }
 .statistics:before{
