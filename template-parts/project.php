@@ -3,7 +3,7 @@
     <div class="container">
         <div class="project-details">
             <div class="project-header text-left">
-                <?php 
+                <?php  
                     $project_sec_title      = get_field('section_title', 'options');
                     $project_sec_subtitle   = get_field('section_subtitle', 'options');
                 ?>

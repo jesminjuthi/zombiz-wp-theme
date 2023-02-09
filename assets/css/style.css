@@ -929,24 +929,6 @@ a:focus.service-btn{
 }
 /*single-team-box*/
 
-
-
-/*team-box-bg*/
-
-.team-box-bg-1{
-	background: url(../../assets/images/team/team.jpg) no-repeat;
-}
-.team-box-bg-2{
-	background: url(../../assets/images/team/team3.jpg) no-repeat;
-}
-.team-box-bg-3{
-	background: url(../../assets/images/team/team2.jpg) no-repeat;
-}
-.team-box-bg-4{
-	background: url(../../assets/images/team/team3.jpg) no-repeat;
-}/*team-box-bg*/
-
-
 /*team-box-inner*/
 .team-box-inner{
 	position: absolute;

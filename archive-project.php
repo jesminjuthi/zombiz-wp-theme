@@ -8,9 +8,23 @@
     <div class="container">
         <div class="project-details">
             <div class="project-header text-left">
-                <h2>Our Finished Projects</h2>
+                <?php 
+                    $project_sec_title      = get_field('section_title', 'options');
+                    $project_sec_subtitle   = get_field('section_subtitle', 'options');
+                ?>
+                <h2>
+                    <?php 
+                        if($project_sec_title) {
+                            echo $project_sec_title;
+                        }
+                    ?>
+                </h2>
                 <p>
-                    Pallamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <?php 
+                        if($project_sec_subtitle) {
+                            echo $project_sec_subtitle;
+                        }
+                    ?>
                 </p>
             </div>
             <!--/.project-header-->

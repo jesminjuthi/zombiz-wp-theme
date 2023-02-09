@@ -6,103 +6,11 @@
 	get_template_part('template-parts/services');
 	get_template_part('template-parts/counter');
 	get_template_part('template-parts/project');
+	get_template_part('template-parts/team');
 ?>
 
 
-<!--team start -->
-<section id="team" class="team">
-    <div class="container">
-        <div class="team-details">
-            <div class="project-header team-header text-left">
-                <h2>Our expert team</h2>
-                <p>
-                    Pallamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <!--/.project-header-->
-            <div class="team-card">
-                <div class="container">
-                    <div class="row">
-                        <div class="owl-carousel  team-carousel">
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-1">
-                                    <div class="team-box-inner">
-                                        <h3>tom hanks</h3>
-                                        <p class="team-meta">Founder & CEO</p>
-                                        <a href="team.html" class="learn-btn">
-                                            learn more
-                                        </a>
-                                    </div>
-                                    <!--/.team-box-inner-->
 
-                                </div>
-                                <!--/.single-team-box-->
-                            </div>
-                            <!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-2">
-                                    <div class="team-box-inner">
-                                        <h3>alex browne</h3>
-                                        <p class="team-meta">
-                                            Director, Management & Research
-                                        </p>
-                                        <a href="team.html" class="learn-btn">
-                                            learn more
-                                        </a>
-                                    </div>
-                                    <!--/.team-box-inner-->
-                                </div>
-                                <!--/.single-team-box-->
-                            </div>
-                            <!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-3">
-                                    <div class="team-box-inner">
-                                        <h3>darren j. stevens</h3>
-                                        <p class="team-meta">
-                                            Director, Finance Solution
-                                        </p>
-                                        <a href="team.html" class="learn-btn">
-                                            learn more
-                                        </a>
-                                    </div>
-                                    <!--/.team-box-inner-->
-                                </div>
-                                <!--/.single-team-box-->
-                            </div>
-                            <!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-4">
-                                    <div class="team-box-inner">
-                                        <h3>kevin thomson</h3>
-                                        <p class="team-meta">
-                                            Head, Legal Advising
-                                        </p>
-                                        <a href="team.html" class="learn-btn">
-                                            learn more
-                                        </a>
-                                    </div>
-                                    <!--/.team-box-inner-->
-                                </div>
-                                <!--/.single-team-box-->
-                            </div>
-                            <!--.col-->
-                        </div>
-                        <!--/.team-carousel-->
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </div>
-            <!--/.team-card-->
-        </div>
-        <!--/.team-details-->
-    </div>
-    <!--/.container-->
-
-</section>
-<!--/.team-->
-<!--team end-->
 
 <!--pricing start -->
 <section id="pricing" class="pricing">

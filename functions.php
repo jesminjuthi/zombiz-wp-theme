@@ -179,6 +179,69 @@
         );
         
         register_taxonomy('project_category', 'project', $args);
+
+    // Team 
+
+    function zombiz_team_cpt() {
+        
+        $args = [
+            'label'  => 'Team Members',
+            'labels' => [
+                'menu_name'             => 'Team Members',
+                'add_new'               => 'Add Team Member',
+                'add_new_item'          => 'Add new team member',
+                'new_item'              => 'New team member',
+                'edit_item'             => 'Edit team member',
+                'view_item'             => 'View team member',
+                'update_item'           => 'View team member',
+                'all_items'             => 'All team members',
+                'search_items'          => 'Search team members',
+                'not_found'             => 'No team members found',
+                'not_found_in_trash'    => 'No team members found in Trash',
+                'featured_image'        => 'Team Member Image', 'zombiz',
+                'set_featured_image'    => 'Set team member image',
+                'remove_featured_image' => 'Remove team member image',
+                'use_featured_image'    => 'Use as team member image',
+                'insert_into_item'      => 'Insert into team member',
+                'uploaded_to_this_item' => 'Uploaded to this team member',
+                'items_list'            => 'Team Members list',
+                'items_list_navigation' => 'Team Members list navigation',
+                'filter_items_list'     => 'Filter team members list',
+            ],
+            'public'                => true,
+            'hierarchical'          => true,
+            'menu_icon'             => 'dashicons-admin-users',
+            'supports'              => [
+                'title',
+                'editor',
+                'thumbnail',
+            ],
+            'taxonomies'            => [
+                'team_category',
+            ],
+            'rewrite'               => true,
+            'has_archive'           => true,
+        ];
+	        register_post_type( 'team_member', $args );
+        }
+
+        add_action( 'init', 'zombiz_team_cpt' );
+
+        // Team Member Taxonomy
+
+        $labels = array(
+            'name' => 'Team Categories',
+            'singular_name' => 'Team Category',
+            'menu_name' => 'Team Categories',
+        );
+        
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'hierarchical' => true,
+        );
+        
+        register_taxonomy('team_category', 'team_member', $args);
         
         
 

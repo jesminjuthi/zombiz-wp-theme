@@ -55,6 +55,12 @@
         ));
 
         acf_add_options_sub_page(array(
+            'page_title'    => 'Team Member',
+            'menu_title'    => 'Team Member',
+            'parent_slug'   => 'zombiz-options'
+        ));
+
+        acf_add_options_sub_page(array(
             'page_title'    => 'Footer',
             'menu_title'    => 'Footer',
             'parent_slug'   => 'zombiz-options'
