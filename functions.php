@@ -243,7 +243,6 @@
         
         register_taxonomy('team_category', 'team_member', $args);
         
-        
 
 
 

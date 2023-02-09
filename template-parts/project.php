@@ -49,7 +49,6 @@
                                             <div class="isotope-overlay">
                                                 <a href="<?php echo $project_link; ?>">
                                                     <span class="lnr lnr-link"></span>
-
                                                 </a>
                                                 <h3>
                                                     <a href="<?php echo $project_link; ?>">
@@ -58,11 +57,9 @@
                                                         ?>
                                                     </a>
                                                 </h3>
-                                                <p>
-                                                    <?php 
-                                                        the_content();
-                                                    ?>
-                                                </p>
+                                                <?php 
+                                                    the_content();
+                                                ?>
                                             </div><!-- /.isotope-overlay -->
                                         </div><!-- /.item -->
                                     </div><!-- /.col -->

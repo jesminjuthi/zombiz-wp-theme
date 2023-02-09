@@ -49,12 +49,10 @@
                                             <?php 
                                                 the_title();
                                             ?>
-                                        </h3>
-                                        <p class="team-meta">
-                                            <?php 
-                                                the_content();
-                                            ?>
-                                        </p>
+                                        </h3>                                        
+                                        <?php 
+                                            the_content();
+                                        ?>
                                         <a href="<?php echo $button_url; ?>" class="learn-btn">
                                             <?php 
                                                 if($team_button_text) {
