@@ -242,6 +242,67 @@
         );
         
         register_taxonomy('team_category', 'team_member', $args);
+
+    // Pricing Table 
+
+    function zombiz_price_cpt() {
+        
+        $args = [
+            'label'  => 'Pricing Table',
+            'labels' => [
+                'menu_name'             => 'Pricing Table',
+                'add_new'               => 'Add price',
+                'add_new_item'          => 'Add new price',
+                'new_item'              => 'New price',
+                'edit_item'             => 'Edit price',
+                'view_item'             => 'View price',
+                'update_item'           => 'View price',
+                'all_items'             => 'All prices',
+                'search_items'          => 'Search prices',
+                'not_found'             => 'No pricing table found',
+                'not_found_in_trash'    => 'No price found in Trash',
+                'featured_image'        => 'Price Image', 'zombiz',
+                'set_featured_image'    => 'Set price image',
+                'remove_featured_image' => 'Remove price image',
+                'use_featured_image'    => 'Use as price image',
+                'insert_into_item'      => 'Insert into price',
+                'uploaded_to_this_item' => 'Uploaded to this price',
+                'items_list'            => 'Pricing list',
+                'items_list_navigation' => 'Pricing list navigation',
+                'filter_items_list'     => 'Filter pricing list',
+            ],
+            'public'                => true,
+            'hierarchical'          => true,
+            'menu_icon'             => 'data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0MCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj4KPHRpdGxlPjwvdGl0bGU+CjxnIGlkPSJpY29tb29uLWlnbm9yZSI+CjwvZz4KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYxNiAwaC0xOTJjLTEzLjIgMC0zMS42MzcgNy42MzctNDAuOTcxIDE2Ljk3MWwtMjM4LjA1OCAyMzguMDU4Yy05LjMzNCA5LjMzNC05LjMzNCAyNC42MDcgMCAzMy45NDFsMjA2LjA1OSAyMDYuMDU5YzkuMzM0IDkuMzM0IDI0LjYwNyA5LjMzNCAzMy45NDEgMGwyMzguMDU5LTIzOC4wNTljOS4zMzMtOS4zMzMgMTYuOTctMjcuNzcgMTYuOTctNDAuOTd2LTE5MmMwLTEzLjItMTAuOC0yNC0yNC0yNHpNNDk2IDE5MmMtMjYuNTEgMC00OC0yMS40OS00OC00OHMyMS40OS00OCA0OC00OCA0OCAyMS40OSA0OCA0OC0yMS40OSA0OC00OCA0OHoiPjwvcGF0aD4KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTY0IDI3MmwyNzItMjcyaC00MGMtMTMuMiAwLTMxLjYzNyA3LjYzNy00MC45NzEgMTYuOTcxbC0yMzguMDU4IDIzOC4wNThjLTkuMzM0IDkuMzM0LTkuMzM0IDI0LjYwNyAwIDMzLjk0MWwyMDYuMDU5IDIwNi4wNTljOS4zMzQgOS4zMzQgMjQuNjA3IDkuMzM0IDMzLjk0MSAwbDE1LjAyOS0xNS4wMjktMjA4LTIwOHoiPjwvcGF0aD4KPC9zdmc+Cg==',
+            'supports'              => [
+                'title',
+            ],
+            'taxonomies'            => [
+                'pricing_category',
+            ],
+            'rewrite'               => true,
+            'has_archive'           => true,
+        ];
+	        register_post_type( 'price', $args );
+        }
+
+        add_action( 'init', 'zombiz_price_cpt' );
+
+        // Pricing Table Taxonomy
+
+        $labels = array(
+            'name' => 'Package Categories',
+            'singular_name' => 'Package Category',
+            'menu_name' => 'Package Categories',
+        );
+        
+        $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'hierarchical' => true,
+        );
+        
+        register_taxonomy('pricing_category', 'price', $args);
         
 
 
